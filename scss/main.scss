@@ -1,5 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@charset "UTF-8";
+
+@import "componentes/reset";
+@import "componentes/variaveis";
+@import "componentes/functions";
+@import "componentes/grid";
