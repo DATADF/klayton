@@ -1,31 +1,16 @@
 // Grid
-.flex-grid {
+.container {
+    box-shadow: 0 0 0 1px teal;
     display: flex;
-    max-width: 1200px;
-    margin: auto;
 }
 
-div[class^="grid-"] {
-  background: tomato;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
-
-// Loops to enumerate the classes
-// Yep, this saves us tons of typing (if this were CSS)
-@for $i from 1 through $grid-columns {
-    .grid-#{$i} { 
-        flex: 0 0 100% / $grid-columns * $i;
-    }
-    .grid-push-#{$i} { 
-        margin-left: 100% / $grid-columns * $i;
-    }
-    .grid-pull-#{$i} { 
-        margin-left: 100% / $grid-columns * $i;
+.item {
+    flex: auto;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background: lightblue;
+    &:nth-child(even) {
+        background: white;
     }
 }
